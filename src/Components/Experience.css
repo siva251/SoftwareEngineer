@@ -1,0 +1,73 @@
+.experience-section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-item {
+  background: var(--card-bg);
+  padding: 25px;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+.timeline-item h3 span {
+  font-weight: normal;
+  color: var(--muted-color);
+  font-size: 0.95rem;
+}
+
+.timeline-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.timeline-item ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Theme Variables */
+:root {
+  --text-color: #1a1a1a;
+  --heading-color: #000000;
+  --muted-color: #555;
+  --card-bg: #ffffff;
+  --accent-color: #6c63ff;
+}
+
+body.dark {
+  --text-color: #f2f2f2;
+  --heading-color: #ffffff;
+  --muted-color: #aaa;
+  --card-bg: #1f1f1f;
+  --accent-color: #9d86ff;
+}
