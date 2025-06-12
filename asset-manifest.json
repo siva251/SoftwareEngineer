@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SoftwareEngineer/static/css/main.2e908b0b.css",
+    "main.js": "/SoftwareEngineer/static/js/main.c8a04eab.js",
+    "index.html": "/SoftwareEngineer/index.html",
+    "main.2e908b0b.css.map": "/SoftwareEngineer/static/css/main.2e908b0b.css.map",
+    "main.c8a04eab.js.map": "/SoftwareEngineer/static/js/main.c8a04eab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e908b0b.css",
+    "static/js/main.c8a04eab.js"
+  ]
+}
