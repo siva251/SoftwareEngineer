@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">SIVA KUMAR B</div>
       <ul className="nav-links">
         {sections.map((sec) => (
           <li key={sec}>
