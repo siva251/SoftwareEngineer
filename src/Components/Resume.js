@@ -19,7 +19,7 @@ const Resume = () => {
 
       </div>
 
-      <a href="/Sivakumar.pdf" download className="resume-button">
+      <a href={`${process.env.PUBLIC_URL}/Sivakumar.pdf`} download className="resume-button">
   Download Resume
 </a>
     </section>

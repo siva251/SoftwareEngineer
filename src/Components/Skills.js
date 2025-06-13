@@ -13,10 +13,10 @@ const skills = [
     title: "HTML5",
     description: <p>
     I have strong expertise in <strong> Semantic HTML</strong>, using meaningful tags like 
-    <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;article&gt;</code> to enhance 
+    <code> &lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;article&gt;</code> to enhance 
     accessibility and SEO. I'm proficient in building <strong> interactive forms</strong> with input 
     validations using HTML5 attributes such as <code>required</code>, <code>pattern</code>, and 
-    <code>min/max</code>. I have hands-on experience embedding multimedia content, including 
+    <code> min/max</code>. I have hands-on experience embedding multimedia content, including 
     <strong> images</strong>, <strong> videos</strong>, and <strong> audio</strong>, and I structure data 
     effectively using <strong> HTML tables</strong> with proper semantic tags.
   </p>
@@ -48,7 +48,7 @@ const skills = [
     title: "JavaScript (ES6+)",
     description: <p>
     I have strong expertise in modern <strong> JavaScript (ES6 and beyond)</strong>, with a deep understanding of concepts like 
-    <strong>  let/const</strong>, <strong> arrow functions</strong>, <strong> template literals</strong>, and <strong> destructuring</strong>. 
+    <strong> var/ let / const</strong>, <strong> arrow functions</strong>, <strong> template literals</strong>, and <strong> destructuring</strong>. 
     I'm proficient in working with <strong> array methods</strong> such as <code>map()</code>, <code>filter()</code>, 
     <code>reduce()</code>, and <code>forEach()</code> for efficient data manipulation. I utilize  
     <strong>  spread/rest operators</strong>, <strong> default parameters</strong>, and <strong> object shorthand </strong>  
