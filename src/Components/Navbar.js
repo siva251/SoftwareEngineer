@@ -1,45 +1,52 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
+
+const sections = ['home', 'about', 'skills', 'experience', 'resume'];
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [active, setActive] = useState('home');
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    const offset = 90;
+
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      setActive(id);
+    }
+  };
+
+  // Optional: Track active section based on scroll
   useEffect(() => {
-    const sectionIds = ['home', 'about', 'skills', 'experience', 'resume'];
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5, // section becomes "active" when 50% visible
+    const handleScroll = () => {
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActive(id);
+            break;
+          }
+        }
+      }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-
-    sectionIds.forEach((id) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav className="navbar">
-      <h1 className="logo">MyPortfolio</h1>
+      <div className="logo">MyPortfolio</div>
       <ul className="nav-links">
-        {['home', 'about', 'skills', 'experience', 'resume'].map((item) => (
-          <li key={item}>
-            <a
-              href={`#${item}`}
-              className={activeSection === item ? 'active' : ''}
+        {sections.map((sec) => (
+          <li key={sec}>
+            <button
+              onClick={() => scrollToSection(sec)}
+              className={`nav-btn ${active === sec ? 'active' : ''}`}
             >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </a>
+              {sec.charAt(0).toUpperCase() + sec.slice(1)}
+            </button>
           </li>
         ))}
       </ul>

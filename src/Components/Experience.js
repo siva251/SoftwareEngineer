@@ -1,5 +1,5 @@
 import React from 'react';
-import './Experience.css';
+// import './Experience.css';
 
 const Experience = () => {
   return (
@@ -7,7 +7,8 @@ const Experience = () => {
       <h2 className="section-title">Experience</h2>
 
       <div className="timeline">
-        <div className="timeline-item">
+        <div className="timeline-item ">
+          <div className='skill-card'>
           <h3>Software Engineer <span> | Jul 2022 – Present</span></h3>
           <ul>
             <li>Built and maintained reusable, scalable React components for dynamic and interactive web interfaces.</li>
@@ -19,9 +20,10 @@ const Experience = () => {
             <li>Led automated testing efforts using Jest and React Testing Library to improve code quality.</li>
             <li>Participated in Agile ceremonies and contributed to continuous improvement efforts.</li>
           </ul>
+          </div>
         </div>
 
-        <div className="timeline-item">
+        <div className="timeline-item skill-card">
           <h3>Associate Software Engineer <span> | Jul 2021 – Jul 2022</span></h3>
           <ul>
             <li>Developed modular, responsive user interfaces using React.js, HTML, and CSS3.</li>

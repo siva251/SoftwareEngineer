@@ -1,11 +1,10 @@
 import React from 'react';
-import './Skills.css';
+// import './Skills.css';
 import { 
-  FaHtml5, FaCss3Alt, FaReact, FaJs, FaGitAlt, FaSass, FaBootstrap 
+  FaHtml5, FaCss3Alt, FaReact, FaJs, FaGitAlt, FaSass 
 } from 'react-icons/fa';
 import {
-  SiRedux, SiTypescript, SiGraphql, SiMui,
-  SiWebpack, SiJest
+  SiRedux, SiMui, SiJest
 } from 'react-icons/si';
 
 const skills = [
@@ -111,11 +110,11 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section ">
       <h2>My Skills</h2>
-      <div className="skills-grid">
+      <div className="skills-grid ">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
+          <div key={index} className="skill-card info-card">
             <div className="skill-icon">{skill.icon}</div>
             <h3>{skill.title}</h3>
             <p>{skill.description}</p>

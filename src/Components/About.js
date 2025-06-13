@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.css';
+// import './About.css';
 
 const About = () => {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="about-section info-card">
       <h2>About Me</h2>
       <p>
     I’m a passionate and experienced <strong>React Developer</strong> with over 4 years of hands-on experience crafting responsive and high-performance <strong>Single Page Applications (SPAs)</strong>. My technical toolkit includes <strong>React.js</strong>, <strong>JavaScript (ES6/ES7)</strong>, <strong>HTML5</strong>, <strong>CSS3/SCSS</strong>, and seamless integration with <strong>RESTful APIs</strong>.

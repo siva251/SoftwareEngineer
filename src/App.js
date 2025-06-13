@@ -5,7 +5,6 @@ import About from './Components/About';
 import Skills from './Components/Skills';
 import Experience from './Components/Experience';
 import Resume from './Components/Resume';
-import Footer from './Components/Footer';
 import ThemeToggle from './Components/ThemeToggle';
 import './App.css';
 
@@ -21,7 +20,6 @@ function App() {
       <Skills />
       <Experience />
       <Resume />
-      <Footer />
     </div>
   );
 }
